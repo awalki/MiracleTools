@@ -1,7 +1,7 @@
 package net.letmiracle.miracletools.module.command;
 
 import org.mineacademy.fo.annotation.AutoRegister;
-import org.mineacademy.fo.command.*;
+import org.mineacademy.fo.command.SimpleCommandGroup;
 
 import java.util.Arrays;
 
@@ -14,12 +14,13 @@ public final class MiracleToolsCommandGroup extends SimpleCommandGroup {
 
     @Override
     protected void registerSubcommands() {
-        this.registerDefaultSubcommands();
+        registerDefaultSubcommands();
+        registerSubcommand(new ToggleObserverSubCommand());
     }
 
     @Override
     protected String getCredits() {
-        return "Как ты сюда попал? Работай с лучшими\n <click:open_url:'https://discord.gg/mnFwKfPAP2'><color:#214eff><b>Наш дискорд</b></color></click>";
+        return "Любишь копаться в серверах? Работай с нами и сделай мир серверов чутка лучше\n <click:open_url:'https://discord.gg/mnFwKfPAP2'><color:#214eff><b>Наш дискорд</b></color></click>";
     }
 
     @Override

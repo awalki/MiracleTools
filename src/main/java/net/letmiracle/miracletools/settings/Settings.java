@@ -1,12 +1,12 @@
 package net.letmiracle.miracletools.settings;
 
-import org.mineacademy.fo.settings.ConfigItems;
 import org.mineacademy.fo.settings.ConfigSection;
 import org.mineacademy.fo.settings.SimpleSettings;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Map;
 
-import com.google.gson.reflect.TypeToken;
 /**
  * Represents the plugin configuration for MiracleTools
  */
@@ -14,8 +14,7 @@ import com.google.gson.reflect.TypeToken;
 public final class Settings extends SimpleSettings {
     @Override
     protected List<String> getUncommentedSections() {
-        return Arrays.asList(
-                "Suffix.List", "HideNameTag.Blacklist");
+        return Arrays.asList("Suffix.List", "HideNameTag.Blacklist", "Observer.Blocks");
     }
 
     public static class SampleSection {
@@ -40,6 +39,16 @@ public final class Settings extends SimpleSettings {
             setPathPrefix("HideNameTag");
 
             BLACKLIST = getStringList("Blacklist");
+        }
+    }
+
+    public static class Observer {
+        public static List<String> BLOCKS;
+
+        private static void init() {
+            setPathPrefix("Observer");
+
+            BLOCKS = getStringList("Blocks");
         }
     }
 

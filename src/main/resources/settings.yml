@@ -45,11 +45,24 @@ Suffix:
       Format: "&c❤"
       Permission: "miracletools.suffix.heart"
 
+# -------------------------------------------------------------------------------------------------
+# HideNameTag (Depends TAB plugin. Enabling invisible-nametags is important to hide tags)
+# -------------------------------------------------------------------------------------------------
 HideNameTag:
 
   # Black List [Black List message may customize in en_US.json make dump first /mt dumplocale]
   Blacklist:
     - "je3ns"
+
+# -------------------------------------------------------------------------------------------------
+# Observer (Sends a notification when the player breaks the selected block from array )
+# -------------------------------------------------------------------------------------------------
+Observer:
+
+  # To allow listen give the "miracletools.observer.listen" permission to the player
+  Blocks:
+    - "DIAMOND_ORE"
+    - "DEEPSLATE_DIAMOND_ORE"
 
 # -------------------------------------------------------------------------------------------------
 # What commands should trigger the main plugin command group?

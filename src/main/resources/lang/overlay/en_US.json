@@ -1,6 +1,16 @@
 {
   "actionbar-message":  "Вы похлопали по плечу игрока {player}",
   "actionbar-message-blacklisted": "&8Неизвестно...",
+  "help-message": [
+    "",
+    "<b><gradient:#7AD671:#F9FDAD>🥝 Miracle справка</b>",
+    "",
+    "<dark_gray>|</dark_gray> Всю нужную информацию вы можете найти на нашей вики",
+    "<dark_gray>|</dark_gray> <click:open_url:'https://wiki.letmiracle.net/'><aqua><hover:show_text:'<aqua>Перейти по ссылке</aqua>'>Ссылка на вики</hover></aqua></click>",
+    ""
+  ],
+
+  "observer-message": "Игрок {player} добыл {block}",
 
   "case-block": "block, blocks",
   "case-command": "command, commands",
